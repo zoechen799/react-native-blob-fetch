@@ -653,7 +653,10 @@ NSOperationQueue *taskQueue;
 {
     NSURLSessionDataTask * task = [taskTable objectForKey:taskId];
     if(task != nil && task.state == NSURLSessionTaskStateRunning)
+    {
         [task cancel];
+        [taskTable removeObjectForKey:taskId];
+    }
 }
 
 

@@ -370,7 +370,11 @@ function fetch(...args:any):Promise {
     subscription.remove()
     subscriptionUpload.remove()
     stateEvent.remove()
-    RNFetchBlob.cancelRequest(taskId, fn)
+    // set a small backoff for insure the task already added to native task
+    // table before we cancel it.
+    setTimeout(() => {
+      RNFetchBlob.cancelRequest(taskId, fn)
+    }, 14)
   }
   promise.taskId = taskId
 
