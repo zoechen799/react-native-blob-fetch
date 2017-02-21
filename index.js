@@ -74,7 +74,7 @@ emitter.addListener("RNFetchBlobMessage", (e) => {
 // Show warning if native module not detected
 if(!RNFetchBlob || !RNFetchBlob.fetchBlobForm || !RNFetchBlob.fetchBlob) {
   console.warn(
-    'react-native-fetch-blob could not find valid native module.',
+    'react-native-blob-fetch could not find valid native module.',
     'please make sure you have linked native modules using `rnpm link`,',
     'and restart RN packager or manually compile IOS/Android project.'
   )

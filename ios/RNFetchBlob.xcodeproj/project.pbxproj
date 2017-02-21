@@ -255,7 +255,7 @@
 					"$(SRCROOT)/../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../../node_modules/react-native/React/**",
-					"$(SRCROOT)/../../node_modules/react-native-fetch-blob/ios/RNFetchBlob",
+					"$(SRCROOT)/../../node_modules/react-native-blob-fetch/ios/RNFetchBlob",
 					"$(SRCROOT)/../../RNFetchBlobTest/node_modules/react-native/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
@@ -276,7 +276,7 @@
 					"$(SRCROOT)/../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../../node_modules/react-native/React/**",
-					"$(SRCROOT)/../../node_modules/react-native-fetch-blob/ios/RNFetchBlob",
+					"$(SRCROOT)/../../node_modules/react-native-blob-fetch/ios/RNFetchBlob",
 					"$(SRCROOT)/../../RNFetchBlobTest/node_modules/react-native/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";

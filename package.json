@@ -1,6 +1,6 @@
 {
   "name": "react-native-blob-fetch",
-  "version": "0.10.4",
+  "version": "0.10.5",
   "description": "A module provides upload, download, and files access API. Supports file stream read/write for process large files.",
   "main": "index.js",
   "scripts": {
@@ -23,11 +23,11 @@
   ],
   "rnpm": {
     "commands": {
-      "prelink": "node ./node_modules/react-native-fetch-blob/scripts/prelink.js"
+      "prelink": "node ./node_modules/react-native-blob-fetch/scripts/prelink.js"
     }
   },
   "repository": {
-    "url": "https://github.com/zoechen799/react-native-fetch-blob.git"
+    "url": "https://github.com/zoechen799/react-native-blob-fetch.git"
   },
   "author": "Johnny Chen <zoechen799@gmail.com>",
   "license": "MIT",
