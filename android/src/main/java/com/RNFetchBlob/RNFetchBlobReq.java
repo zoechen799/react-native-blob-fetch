@@ -354,6 +354,9 @@ public class RNFetchBlobReq extends BroadcastReceiver implements Runnable {
                 }
             });
 
+            if(RNFetchBlobUtils.getNetworkInterceptor() != null){
+                clientBuilder.addNetworkInterceptor(RNFetchBlobUtils.getNetworkInterceptor());
+            }
 
             if(options.timeout >= 0) {
                 clientBuilder.connectTimeout(options.timeout, TimeUnit.MILLISECONDS);

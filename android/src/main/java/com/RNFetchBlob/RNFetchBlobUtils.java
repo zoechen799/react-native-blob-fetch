@@ -14,6 +14,7 @@ import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
+import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 
 
@@ -91,5 +92,15 @@ public class RNFetchBlobUtils {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+    }
+
+    private static Interceptor _interceptor;
+
+    public static void setNetworkInterceptor(Interceptor interceptor){
+        _interceptor = interceptor;
+    }
+
+    static Interceptor getNetworkInterceptor(){
+        return _interceptor;
     }
 }
